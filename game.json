@@ -228,6 +228,42 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "bridgeLogs.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridgeLogs.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bridge-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridge-2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bridge-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridge-3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bridge-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridge-4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "bridge.png",
         "kind": "image",
         "metadata": "",
@@ -237,10 +273,109 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "bridgeLogs.png",
+        "file": "bridge-1.png",
         "kind": "image",
         "metadata": "",
-        "name": "bridgeLogs.png",
+        "name": "bridge-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bridge-2-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridge-2-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bridge-3-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridge-3-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bridge-4-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridge-4-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bridge-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridge-5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bridge 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridge 2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bridgeLogs-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridgeLogs-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bridgeLogs-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridgeLogs-2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bridgeLogs-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridgeLogs-3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bridgeLogs-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridgeLogs-4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bridgeLogs-5-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridgeLogs-5-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bridgeLogs-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bridgeLogs-5.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -287,7 +422,7 @@
           "layer": "",
           "locked": false,
           "name": "floor",
-          "width": 834,
+          "width": 1399,
           "x": -16,
           "y": 557,
           "zOrder": 1,
@@ -301,25 +436,10 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "fast_breaking_floor",
-          "width": 0,
-          "x": 352,
-          "y": 493,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
           "name": "player",
           "width": 0,
-          "x": 156,
-          "y": 461,
+          "x": 403,
+          "y": 460,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -333,9 +453,9 @@
           "locked": false,
           "name": "fast_breaking_floor",
           "width": 0,
-          "x": 480,
-          "y": 451,
-          "zOrder": 4,
+          "x": 518,
+          "y": 495,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -346,11 +466,11 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "fast_breaking_floor",
+          "name": "slow_breaking_floor",
           "width": 0,
-          "x": 583,
-          "y": 399,
-          "zOrder": 5,
+          "x": 291,
+          "y": 506,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -664,7 +784,12 @@
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "is_breaking",
+              "value": "0"
+            }
+          ],
           "behaviors": [
             {
               "extraBorder": 0,
@@ -672,25 +797,114 @@
               "type": "DestroyOutsideBehavior::DestroyOutside"
             },
             {
-              "canBeGrabbed": false,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": false,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
             {
-              "name": "",
+              "name": "bridge",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 1,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "bridge.png",
+                      "image": "bridge 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bridge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bridge-2-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bridge-3-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bridge-4-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bridge-5.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -716,7 +930,12 @@
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "is_breaking",
+              "value": "0"
+            }
+          ],
           "behaviors": [
             {
               "extraBorder": 0,
@@ -724,16 +943,20 @@
               "type": "DestroyOutsideBehavior::DestroyOutside"
             },
             {
-              "canBeGrabbed": false,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": false,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
             {
-              "name": "",
+              "name": "bridgeLogs",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -742,7 +965,92 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "bridgeLogs.png",
+                      "image": "bridgeLogs-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bridgeLogs-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bridgeLogs-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bridgeLogs-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bridgeLogs-5-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bridgeLogs-5.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -766,68 +1074,239 @@
       ],
       "events": [
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "folded": true,
+          "name": "Development utilities",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "inverted": false,
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "q"
+                  ],
+                  "subInstructions": []
+                }
               ],
-              "subInstructions": []
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"falling_platform\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "PauseObjectTimer"
-              },
-              "parameters": [
-                "fast_breaking_floor",
-                "\"break\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
+          "parameters": []
         },
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "folded": true,
+          "name": "Keep camera on player",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "inverted": false,
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "q"
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CameraX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "player.X()",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
               ],
-              "subInstructions": []
+              "events": []
             }
           ],
-          "actions": [
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": true,
+          "name": "Player animations",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"falling_platform\"",
-                ""
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlatformBehavior::IsOnFloor"
+                  },
+                  "parameters": [
+                    "player",
+                    "PlatformerObject"
+                  ],
+                  "subInstructions": []
+                }
               ],
-              "subInstructions": []
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlatformBehavior::IsMoving"
+                      },
+                      "parameters": [
+                        "player",
+                        "PlatformerObject"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "player",
+                        "\"run\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "PlatformBehavior::IsMoving"
+                      },
+                      "parameters": [
+                        "player",
+                        "PlatformerObject"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "player",
+                        "\"idle\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlatformBehavior::IsJumping"
+                      },
+                      "parameters": [
+                        "player",
+                        "PlatformerObject"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlatformBehavior::IsFalling"
+                      },
+                      "parameters": [
+                        "player",
+                        "PlatformerObject"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "player",
+                    "\"jump\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ],
-          "events": []
+          "parameters": []
         },
         {
           "disabled": false,
@@ -847,17 +1326,36 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Tween::Exists"
+              },
+              "parameters": [
+                "fast_breaking_floor",
+                "Tween",
+                "\"break\""
+              ],
+              "subInstructions": []
             }
           ],
           "actions": [
             {
               "type": {
                 "inverted": false,
-                "value": "UnPauseObjectTimer"
+                "value": "Tween::AddObjectVariableTween"
               },
               "parameters": [
                 "fast_breaking_floor",
-                "\"break\""
+                "Tween",
+                "\"break\"",
+                "is_breaking",
+                "0",
+                "100",
+                "\"linear\"",
+                "500",
+                ""
               ],
               "subInstructions": []
             }
@@ -872,12 +1370,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ObjectTimer"
+                "value": "VarObjet"
               },
               "parameters": [
                 "fast_breaking_floor",
-                "\"break\"",
-                "0.5"
+                "is_breaking",
+                "=",
+                "0"
               ],
               "subInstructions": []
             }
@@ -886,11 +1385,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "RemoveObjectTimer"
+                "value": "ChangeSprite"
               },
               "parameters": [
                 "fast_breaking_floor",
-                "\"break\""
+                "=",
+                "0"
               ],
               "subInstructions": []
             },
@@ -901,21 +1401,8 @@
               },
               "parameters": [
                 "fast_breaking_floor",
-                "Platform",
-                "no"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "fast_breaking_floor",
-                "90",
-                "250",
-                "1"
+                "DestroyOutside",
+                ""
               ],
               "subInstructions": []
             }
@@ -930,16 +1417,31 @@
             {
               "type": {
                 "inverted": false,
-                "value": "PlatformBehavior::IsOnFloor"
+                "value": "VarObjet"
               },
               "parameters": [
-                "player",
-                "PlatformerObject"
+                "fast_breaking_floor",
+                "is_breaking",
+                ">",
+                "0"
               ],
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "fast_breaking_floor",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
@@ -949,11 +1451,13 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "PlatformBehavior::IsMoving"
+                    "value": "VarObjet"
                   },
                   "parameters": [
-                    "player",
-                    "PlatformerObject"
+                    "fast_breaking_floor",
+                    "is_breaking",
+                    ">=",
+                    "30"
                   ],
                   "subInstructions": []
                 }
@@ -962,48 +1466,175 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "SetAnimationName"
+                    "value": "ChangeSprite"
                   },
                   "parameters": [
-                    "player",
-                    "\"run\""
+                    "fast_breaking_floor",
+                    "=",
+                    "2"
                   ],
                   "subInstructions": []
                 }
               ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "events": [
                 {
-                  "type": {
-                    "inverted": true,
-                    "value": "PlatformBehavior::IsMoving"
-                  },
-                  "parameters": [
-                    "player",
-                    "PlatformerObject"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "fast_breaking_floor",
+                        "is_breaking",
+                        ">=",
+                        "60"
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetAnimationName"
-                  },
-                  "parameters": [
-                    "player",
-                    "\"idle\""
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeSprite"
+                      },
+                      "parameters": [
+                        "fast_breaking_floor",
+                        "=",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "fast_breaking_floor",
+                            "is_breaking",
+                            ">=",
+                            "90"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeSprite"
+                          },
+                          "parameters": [
+                            "fast_breaking_floor",
+                            "=",
+                            "4"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "fast_breaking_floor",
+                                "is_breaking",
+                                "=",
+                                "100"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ChangeSprite"
+                              },
+                              "parameters": [
+                                "fast_breaking_floor",
+                                "=",
+                                "5"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ActivateBehavior"
+                              },
+                              "parameters": [
+                                "fast_breaking_floor",
+                                "Platform",
+                                "no"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "AddForceAL"
+                              },
+                              "parameters": [
+                                "fast_breaking_floor",
+                                "90",
+                                "400",
+                                "1"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "fast_breaking_floor",
+                                "is_breaking",
+                                "=",
+                                "101"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ActivateBehavior"
+                              },
+                              "parameters": [
+                                "fast_breaking_floor",
+                                "DestroyOutside",
+                                "yes"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    }
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ]
         },
@@ -1015,49 +1646,327 @@
             {
               "type": {
                 "inverted": false,
-                "value": "BuiltinCommonInstructions::Or"
+                "value": "CollisionNP"
               },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "PlatformBehavior::IsJumping"
-                  },
-                  "parameters": [
-                    "player",
-                    "PlatformerObject"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "PlatformBehavior::IsFalling"
-                  },
-                  "parameters": [
-                    "player",
-                    "PlatformerObject"
-                  ],
-                  "subInstructions": []
-                }
-              ]
+              "parameters": [
+                "player",
+                "slow_breaking_floor",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Tween::Exists"
+              },
+              "parameters": [
+                "slow_breaking_floor",
+                "Tween",
+                "\"break\""
+              ],
+              "subInstructions": []
             }
           ],
           "actions": [
             {
               "type": {
                 "inverted": false,
-                "value": "SetAnimationName"
+                "value": "Tween::AddObjectVariableTween"
               },
               "parameters": [
-                "player",
-                "\"jump\""
+                "slow_breaking_floor",
+                "Tween",
+                "\"break\"",
+                "is_breaking",
+                "0",
+                "100",
+                "\"linear\"",
+                "1500",
+                ""
               ],
               "subInstructions": []
             }
           ],
           "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "slow_breaking_floor",
+                "is_breaking",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "slow_breaking_floor",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "slow_breaking_floor",
+                "DestroyOutside",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "slow_breaking_floor",
+                "is_breaking",
+                ">",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "slow_breaking_floor",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "slow_breaking_floor",
+                    "is_breaking",
+                    ">=",
+                    "30"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "slow_breaking_floor",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "slow_breaking_floor",
+                        "is_breaking",
+                        ">=",
+                        "60"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeSprite"
+                      },
+                      "parameters": [
+                        "slow_breaking_floor",
+                        "=",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "slow_breaking_floor",
+                            "is_breaking",
+                            ">=",
+                            "90"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeSprite"
+                          },
+                          "parameters": [
+                            "slow_breaking_floor",
+                            "=",
+                            "4"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "slow_breaking_floor",
+                                "is_breaking",
+                                "=",
+                                "100"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ChangeSprite"
+                              },
+                              "parameters": [
+                                "slow_breaking_floor",
+                                "=",
+                                "5"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ActivateBehavior"
+                              },
+                              "parameters": [
+                                "slow_breaking_floor",
+                                "Platform",
+                                "no"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "AddForceAL"
+                              },
+                              "parameters": [
+                                "slow_breaking_floor",
+                                "90",
+                                "400",
+                                "1"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "slow_breaking_floor",
+                                "is_breaking",
+                                "=",
+                                "101"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ActivateBehavior"
+                              },
+                              "parameters": [
+                                "slow_breaking_floor",
+                                "DestroyOutside",
+                                "yes"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -1087,12 +1996,115 @@
         {
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ]
     }
   ],
   "externalEvents": [],
-  "eventsFunctionsExtensions": [],
+  "eventsFunctionsExtensions": [
+    {
+      "author": "",
+      "description": "",
+      "extensionNamespace": "",
+      "fullName": "",
+      "name": "breakable_floor",
+      "shortDescription": "",
+      "tags": "",
+      "version": "",
+      "eventsFunctions": [
+        {
+          "description": "Begins breaking a floor",
+          "fullName": "Begin breaking floor",
+          "functionType": "Action",
+          "name": "begin_breaking_floor",
+          "sentence": "Begin breaking the floor _PARAM1_",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "The floor to be broken",
+              "name": "breakable_floor",
+              "optional": false,
+              "supplementaryInformation": "breakable_floor::breakable_floor",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Allows the attached floor to be broken after a short delay.  Use the action 'Begin breaking floor' to begin the breaking sequence.",
+          "fullName": "Breakable Floor",
+          "name": "breakable_floor",
+          "objectType": "Sprite",
+          "eventsFunctions": [
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "breakable_floor::breakable_floor",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "1",
+              "type": "Number",
+              "label": "Milliseconds the floor should be breaking",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "duration"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "internal flag for breaking sequence",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "is_breaking"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "externalLayouts": [],
   "externalSourceFiles": []
 }
