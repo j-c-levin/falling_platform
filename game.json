@@ -2048,22 +2048,51 @@
                     }
                   ],
                   "actions": [],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "Set it up here to tween between the values and fire off 'platform degraded' events",
-                  "comment2": ""
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "breakable_platform::breakable_platform::SetPropertybreaking_value"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "+",
+                            "1000 * TimeDelta()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Egal"
+                          },
+                          "parameters": [
+                            "Object.Behavior::Propertybreaking_value()",
+                            ">=",
+                            "Object.Behavior::Propertybreaking_duration()"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": []
+                    }
+                  ]
                 }
               ],
               "parameters": [
@@ -2112,17 +2141,98 @@
                         "yes"
                       ],
                       "subInstructions": []
-                    },
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "breakable_platform::breakable_platform",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "The platform has broken",
+              "fullName": "Platform Broken",
+              "functionType": "Condition",
+              "name": "platform_broken",
+              "sentence": "_PARAM0_ has broken",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
                       "type": {
                         "inverted": false,
-                        "value": "breakable_platform::breakable_platform::SetPropertyduration"
+                        "value": "Egal"
                       },
                       "parameters": [
-                        "Object",
-                        "Behavior",
-                        "=",
-                        "GetArgumentAsNumber(\"delay\")"
+                        "Object.Behavior::Propertybreaking_value()",
+                        "<",
+                        "Object.Behavior::Propertybreaking_duration()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "Object.Behavior::Propertybreaking_value()",
+                        ">=",
+                        "Object.Behavior::Propertybreaking_duration()"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
                       ],
                       "subInstructions": []
                     }
@@ -2148,15 +2258,35 @@
                   "optional": false,
                   "supplementaryInformation": "breakable_platform::breakable_platform",
                   "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Triggers periodically as a breakable platform degrades",
+              "fullName": "Platform Degraded",
+              "functionType": "Condition",
+              "name": "platform_degraded",
+              "sentence": "_PARAM0_ has degraded",
+              "events": [],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
                 },
                 {
                   "codeOnly": false,
                   "defaultValue": "",
-                  "description": "Duration in milliseconds before the platform breaks",
-                  "name": "delay",
+                  "description": "Behavior",
+                  "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "",
-                  "type": "expression"
+                  "supplementaryInformation": "breakable_platform::breakable_platform",
+                  "type": "behavior"
                 }
               ],
               "objectGroups": []
@@ -2174,10 +2304,34 @@
             {
               "value": "0",
               "type": "Number",
-              "label": "how long should the platform break for",
+              "label": "how long should the platform break for in milliseconds",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "breaking_duration"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "how broken is the platform",
               "extraInformation": [],
               "hidden": true,
-              "name": "duration"
+              "name": "breaking_value"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "tracks when the platform is going to break",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "Property"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "how many times should the platform fire the degraded condition before it breaks?",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "degrading_levels"
             }
           ]
         }
