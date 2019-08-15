@@ -2011,46 +2011,16 @@
       "description": "",
       "extensionNamespace": "",
       "fullName": "",
-      "name": "breakable_floor",
+      "name": "breakable_platform",
       "shortDescription": "",
       "tags": "",
       "version": "",
-      "eventsFunctions": [
-        {
-          "description": "Begins breaking a floor",
-          "fullName": "Begin breaking floor",
-          "functionType": "Action",
-          "name": "begin_breaking_floor",
-          "sentence": "Begin breaking the floor _PARAM1_",
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [],
-              "events": []
-            }
-          ],
-          "parameters": [
-            {
-              "codeOnly": false,
-              "defaultValue": "",
-              "description": "The floor to be broken",
-              "name": "breakable_floor",
-              "optional": false,
-              "supplementaryInformation": "breakable_floor::breakable_floor",
-              "type": "behavior"
-            }
-          ],
-          "objectGroups": []
-        }
-      ],
+      "eventsFunctions": [],
       "eventsBasedBehaviors": [
         {
           "description": "Allows the attached floor to be broken after a short delay.  Use the action 'Begin breaking floor' to begin the breaking sequence.",
-          "fullName": "Breakable Floor",
-          "name": "breakable_floor",
+          "fullName": "Breakable Platform",
+          "name": "breakable_platform",
           "objectType": "Sprite",
           "eventsFunctions": [
             {
@@ -2059,7 +2029,43 @@
               "functionType": "Action",
               "name": "doStepPreEvents",
               "sentence": "",
-              "events": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "breakable_platform::breakable_platform::Propertyis_breaking"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Set it up here to tween between the values and fire off 'platform degraded' events",
+                  "comment2": ""
+                }
+              ],
               "parameters": [
                 {
                   "codeOnly": false,
@@ -2076,8 +2082,81 @@
                   "description": "Behavior",
                   "name": "Behavior",
                   "optional": false,
-                  "supplementaryInformation": "breakable_floor::breakable_floor",
+                  "supplementaryInformation": "breakable_platform::breakable_platform",
                   "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "After a brief delay break the platform",
+              "fullName": "Trigger platform break",
+              "functionType": "Action",
+              "name": "trigger_platform_break",
+              "sentence": "Trigger _PARAM0_ to break after _PARAM2_ ms",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "breakable_platform::breakable_platform::SetPropertyis_breaking"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "breakable_platform::breakable_platform::SetPropertyduration"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "GetArgumentAsNumber(\"delay\")"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "breakable_platform::breakable_platform",
+                  "type": "behavior"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Duration in milliseconds before the platform breaks",
+                  "name": "delay",
+                  "optional": false,
+                  "supplementaryInformation": "",
+                  "type": "expression"
                 }
               ],
               "objectGroups": []
@@ -2085,20 +2164,20 @@
           ],
           "propertyDescriptors": [
             {
-              "value": "1",
-              "type": "Number",
-              "label": "Milliseconds the floor should be breaking",
-              "extraInformation": [],
-              "hidden": false,
-              "name": "duration"
-            },
-            {
               "value": "",
               "type": "Boolean",
-              "label": "internal flag for breaking sequence",
+              "label": "should the platform break",
               "extraInformation": [],
               "hidden": true,
               "name": "is_breaking"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "how long should the platform break for",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "duration"
             }
           ]
         }
